@@ -1,0 +1,172 @@
+{
+  "data": [
+    {
+      "id": "1000",
+      "category": "Temel Gıda",
+      "name": "Migros Ayçiçek Yağı 1 Lt",
+      "price": 37.50,
+      "image": "https://images.migrosone.com/sanalmarket/product/04111082/04111082-d753cb.jpg"
+    },
+    {
+      "id": "1001",
+      "category": "Temel Gıda",
+      "name": "Komili Naturel Sızma 1 Lt",
+      "price": 142.90,
+      "image": "https://images.migrosone.com/sanalmarket/product/04133425/4133425-c29ecb.jpg"
+    },
+    {
+      "id": "1002",
+      "category": "Temel Gıda",
+      "name": "Migros Ayçiçek Yağı 1 Lt",
+      "price": 37.50,
+      "image": "https://images.migrosone.com/sanalmarket/product/04111082/04111082-d753cb.jpg"
+    },
+    {
+      "id": "1003",
+      "category": "Temel Gıda",
+      "name": "Oneva Hindistan Cevizi Yağı",
+      "price": 87.90,
+      "image": "https://images.migrosone.com/sanalmarket/product/04155017/oneva-hindistan-cevizi-yagi-300-ml-f66229.jpg"
+    },
+    {
+      "id": "1004",
+      "category": "Temel Gıda",
+      "name": "Asiltane Erken Hasat Zeytin Yağı 500 Ml",
+      "price": 116.90,
+      "image": "https://images.migrosone.com/sanalmarket/product/4130088/4130088-d253ac.jpg"
+    },
+    {
+      "id": "1005",
+      "category": "Temel Gıda",
+      "name": "Migros Ayçiçek Yağı 5 Lt",
+      "price": 134.75,
+      "image": "https://images.migrosone.com/sanalmarket/product/04110124/04110124-f47e40.jpg"
+    },
+    {
+      "id": "1006",
+      "category": "Süt, Kahvaltılık ve Kahve",
+      "name": "Pınar Süzme Peynir 1 Kg",
+      "price": 66.90,
+      "image": "https://images.migrosone.com/sanalmarket/product/10019052/10019052-0f7953.jpg"
+    },
+    {
+      "id": "1007",
+      "category": "Süt, Kahvaltılık ve Kahve",
+      "name": "Migros Taze KAşar Peyniri 1 Kg",
+      "price": 137.75,
+      "image": "https://images.migrosone.com/sanalmarket/product/10101005/10101005-384fc1.jpg"
+    },
+    {
+      "id": "1008",
+      "category": "Süt, Kahvaltılık ve Kahve",
+      "name": "Tahsildaroğlu Dil Peyniri",
+      "price": 62.50,
+      "image": "https://images.migrosone.com/sanalmarket/product/10108832/10108832-b01d94.jpg"
+    },
+    {
+      "id": "1009",
+      "category": "Süt, Kahvaltılık ve Kahve",
+      "name": "Migros Krem Peynir",
+      "price": 42.50,
+      "image": "https://images.migrosone.com/sanalmarket/product/10302054/10302054-d1e20b.jpg"
+    },
+    {
+      "id": "1010",
+      "category": "Süt, Kahvaltılık ve Kahve",
+      "name": "Tahsildaroğlu Torba Lor",
+      "price": 27.90,
+      "image": "https://images.migrosone.com/sanalmarket/product/10403392/10403392-e40884.jpg"
+    },
+    {
+      "id": "1011",
+      "category": "Süt, Kahvaltılık ve Kahve",
+      "name": "Ünal Çeçil Peynir",
+      "price": 225.25,
+      "image": "https://images.migrosone.com/sanalmarket/product/10403071/unal-cecil-peyniri-kg-2887cb.jpg"
+    },
+    {
+      "id": "1012",
+      "category": "Atıştırmalık",
+      "name": "Milka Bonibon 3'lü Paket",
+      "price": 19.00,
+      "image": "https://images.migrosone.com/sanalmarket/product/07030231/milka-bonibon-3-lu-paket-81-gr-0ba725.jpg"
+    },
+    {
+      "id": "1013",
+      "category": "Atıştırmalık",
+      "name": "Ozmo Cornet",
+      "price": 6.00,
+      "image": "https://images.migrosone.com/sanalmarket/product/07011169/07011169-5ff8f7.jpg"
+    },
+    {
+      "id": "1014",
+      "category": "Atıştırmalık",
+      "name": "Toblerone Sütlü Çikolata 100 Gr",
+      "price": 32.25,
+      "image": "https://images.migrosone.com/sanalmarket/product/07040810/07040810-a3a338.jpg"
+    },
+    {
+      "id": "1015",
+      "category": "Atıştırmalık",
+      "name": "Godiva Bitter Çikolata 100 Gr",
+      "price": 25.25,
+      "image": "https://images.migrosone.com/sanalmarket/product/07044074/07044074-780633.jpg"
+    },
+    {
+      "id": "1016",
+      "category": "Atıştırmalık",
+      "name": "Ozmo Go Şekilli Çikolata 100 Gr",
+      "price": 11.25,
+      "image": "https://images.migrosone.com/sanalmarket/product/07037083/7037083-b08457.jpg"
+    },
+    {
+      "id": "1017",
+      "category": "Atıştırmalık",
+      "name": "Nestle Karamel Çikolatalı Çikolata 100 Gr",
+      "price": 22.25,
+      "image": "https://images.migrosone.com/sanalmarket/product/07036804/07036804-f90214.jpg"
+    },
+    {
+      "id": "1018",
+      "category": "Meyve, Sebze",
+      "name": "Soğan Kuru Dökme Kg",
+      "price": 19.25,
+      "image": "https://images.migrosone.com/sanalmarket/product/28420000/sogan-kuru-dokme-kg-25131e.jpg"
+    },
+    {
+      "id": "1019",
+      "category": "Meyve, Sebze",
+      "name": "Domates Kg",
+      "price": 26.25,
+      "image": "https://images.migrosone.com/sanalmarket/product/28080000/domates-kg-c7462d.jpg"
+    },
+    {
+      "id": "1020",
+      "category": "Meyve, Sebze",
+      "name": "Patates Kg",
+      "price": 7.25,
+      "image": "https://images.migrosone.com/sanalmarket/product/28290036/28290036-6a65f9.jpg"
+    },
+    {
+      "id": "1021",
+      "category": "Meyve, Sebze",
+      "name": "Domates Kokteyl Kg",
+      "price": 28.25,
+      "image": "https://images.migrosone.com/sanalmarket/product/28091000/domates-kokteyl-kg-7d4569.jpg"
+    },
+    {
+      "id": "1022",
+      "category": "Meyve, Sebze",
+      "name": "Brokoli Kg",
+      "price": 32.25,
+      "image": "https://images.migrosone.com/sanalmarket/product/28180000/brokoli-kg-3731a0.jpg"
+    },
+    {
+      "id": "1023",
+      "category": "Meyve, Sebze",
+      "name": "Kereviz Kg",
+      "price": 19.25,
+      "image": "https://images.migrosone.com/sanalmarket/product/28190000/kereviz-kg-d0f5a7.jpg"
+    }
+  ]
+}
