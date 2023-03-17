@@ -1,0 +1,33 @@
+<app-header></app-header>
+
+<p-menubar>
+  <ng-template pTemplate="start">
+    <div style="display: flex;margin-left:1rem">
+      <p style="margin-right:2rem; cursor: pointer;" (click)="handleEventCategory(category)"
+        *ngFor="let category of categories">{{category}}</p>
+    </div>
+  </ng-template>
+</p-menubar>
+
+<div style="display:grid; grid-template-columns:auto auto auto;grid-gap: 2rem; margin:2rem;" *ngIf="!loading">
+  <p-card [style]="{width: '330px'}" styleClass="p-card-shadow" *ngFor="let product of products;let i = index">
+    <ng-template pTemplate="header">
+      <div style="display:flex; justify-content: center;">
+        <img alt="Card" [src]="product['image']" [style]="{width: '250px', height:'200px'}">
+      </div>
+    </ng-template>
+    <p>{{product['name']}}
+    </p>
+    <ng-template pTemplate="footer">
+      <div style="display:flex; justify-content: space-between; align-items: center;">
+        <p>{{product['price']}} TL</p>
+        <p-button label="Add Cart" icon="pi pi-cart-plus"></p-button>
+      </div>
+    </ng-template>
+  </p-card>
+</div>
+
+<div style="display:flex; justify-content:center; align-items:center;height:30vh;" *ngIf="loading">
+  <p-progressSpinner [style]="{width: '50px', height: '50px'}" styleClass="custom-spinner" strokeWidth="8"
+    fill="var(--surface-ground)" animationDuration=".5s"></p-progressSpinner>
+</div>
