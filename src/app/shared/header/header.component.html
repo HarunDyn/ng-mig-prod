@@ -7,7 +7,7 @@
   </ng-template>
   <ng-template pTemplate="end">
     <a routerLink="/cart">
-      <i class="pi pi-shopping-cart" style="font-size: 1.5rem; margin-right:1rem ;" pBadge value="2"></i>
+      <i class="pi pi-shopping-cart" style="font-size: 1.5rem; margin-right:1rem ;" pBadge [value]="countProduct"></i>
     </a>
   </ng-template>
 </p-menubar>
