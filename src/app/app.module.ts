@@ -7,6 +7,8 @@ import { HttpClientModule } from '@angular/common/http'
 import { RoutingModule } from './app-routing.module';
 import { HomeModule } from './modules/home/home.module';
 import { CartModule } from './modules/cart/cart.module';
+import { StoreModule } from '@ngrx/store';
+import { cartReducer } from './store/reducers/cart.reducer';
 
 
 @NgModule({
@@ -19,7 +21,8 @@ import { CartModule } from './modules/cart/cart.module';
     HttpClientModule,
     RoutingModule,
     HomeModule,
-    CartModule
+    CartModule,
+    StoreModule.forRoot({ cart: cartReducer })
   ],
   providers: [],
   bootstrap: [AppComponent]

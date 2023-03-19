@@ -3,6 +3,10 @@ import { CommonModule } from '@angular/common';
 import { CartComponent } from './pages/cart.component';
 import { FormsModule } from '@angular/forms';
 import { SharedModule } from 'src/app/shared/shared.module';
+import { CardModule } from 'primeng/card';
+import { ButtonModule } from 'primeng/button';
+import { ProgressSpinnerModule } from 'primeng/progressspinner';
+import { TableModule } from 'primeng/table';
 
 @NgModule({
   declarations: [
@@ -11,7 +15,11 @@ import { SharedModule } from 'src/app/shared/shared.module';
   imports: [
     CommonModule,
     FormsModule,
-    SharedModule
+    SharedModule,
+    CardModule,
+    ButtonModule,
+    ProgressSpinnerModule,
+    TableModule
   ]
 })
 export class CartModule { }

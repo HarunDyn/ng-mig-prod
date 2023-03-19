@@ -1,2 +1,54 @@
 <app-header></app-header>
-<div>Selammmm cart</div>
+
+<div class="cart-container" *ngIf="!loading && cartProducts.length > 0">
+  <div>
+    <h3 style="color:rgb(98, 97, 97);margin-left:1rem;">Sepetim: {{totalCount}} Ürün</h3>
+    <div class="cont-large">
+      <ng-container *ngFor="let product of cartProducts;let i = index">
+        <div class="cart-prod-container">
+          <img alt="Card" [src]="product.image" [style]="{width: '100px', height:'100px'}">
+          <p>{{product.name | titlecase}}</p>
+          <p>{{product.price | number:'1.2-2'}} TL</p>
+          <p>{{product.quantity}} adet</p>
+          <div>
+            <button style="width:1.5rem; height:1rem; margin-right:0.5rem;" pButton type="button" icon="pi pi-plus"
+              class="p-button-success" (click)="addProductToStore(product)"></button>
+            <button style="width:1.5rem; height:1rem; margin-right:1rem;" pButton type="button" icon="pi pi-minus"
+              class="p-button-warning" (click)="removeProductToStore(product)"></button>
+            <button style="width:1.5rem; height:1rem; " pButton type="button" class="p-button-danger" icon="pi pi-trash"
+              (click)="clearProdToStore(product)"></button>
+          </div>
+        </div>
+        <div class="hr" *ngIf="cartProducts.length -1 !== i"></div>
+      </ng-container>
+    </div>
+  </div>
+
+  <div class="cart-summary-container">
+    <div>
+      <p style="margin-bottom:1rem;">Sepet Özeti: {{totalCount}} Ürün</p>
+      <p>Toplam Tutar: {{totalPrice | number:'1.2-2'}} TL</p>
+    </div>
+    <div class="checkout-btn">
+      <button pButton type="button" label="Sepeti Temizle" icon="pi pi-trash"
+        class="p-button-raised p-button-rounded p-button-danger" style="margin-right:1rem;"
+        (click)="clearProductToStore()"></button>
+    </div>
+  </div>
+</div>
+
+<div class="cart-summary-container-zero" *ngIf="!loading && cartProducts.length === 0">
+  <img alt="Card" src="https://www.migros.com.tr/assets/images/cart-empty/cart-empty.webp"
+    [style]="{width: '100%', height:'50%'}">
+  <p style="margin:1rem;">Henüz sepetine bir ürün eklemedin!
+  </p>
+  <a href="/" class="link-active">
+    <button pButton type="button" label="Alışverişe Başla" icon="pi pi-shopping-cart"
+      class="p-button-raised p-button-rounded p-button-warning"></button>
+  </a>
+</div>
+
+<div style="display:flex; justify-content:center; align-items:center;height:30vh;" *ngIf="loading">
+  <p-progressSpinner [style]="{width: '50px', height: '50px'}" styleClass="custom-spinner" strokeWidth="8"
+    fill="var(--surface-ground)" animationDuration=".5s"></p-progressSpinner>
+</div>
