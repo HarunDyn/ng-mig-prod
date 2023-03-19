@@ -1,27 +1,46 @@
 <app-header></app-header>
 
-<p-menubar>
+<p-menubar class="categ-p-menu">
   <ng-template pTemplate="start">
-    <div style="display: flex;margin-left:1rem">
-      <p style="margin-right:2rem; cursor: pointer;" (click)="handleEventCategory(category)"
-        *ngFor="let category of categories">{{category}}</p>
+    <div class="menu-header-container">
+      <div class="menu-header-container-item" (click)="handleEventCategory(ctg)" *ngFor="let ctg of categories">
+        <p>{{ctg}}</p>
+        <div class="selected-ctg" *ngIf="ctg === category"></div>
+      </div>
     </div>
   </ng-template>
 </p-menubar>
 
-<div style="display:grid; grid-template-columns:auto auto auto;grid-gap: 2rem; margin:2rem;" *ngIf="!loading">
-  <p-card [style]="{width: '330px'}" styleClass="p-card-shadow" *ngFor="let product of products;let i = index">
+<div class="products-container" *ngIf="!loading">
+  <p-card [style]="{width: '20rem'}" styleClass="p-card-shadow" *ngFor="let product of products;let i = index"
+    cardHover>
     <ng-template pTemplate="header">
       <div style="display:flex; justify-content: center;">
-        <img alt="Card" [src]="product['image']" [style]="{width: '250px', height:'200px'}">
+        <img alt="Card" [src]="product['image']" [style]="{width: '15rem', height:'12rem'}">
       </div>
     </ng-template>
-    <p>{{product['name']}}
+    <p>{{product['name'] | titlecase}}
     </p>
     <ng-template pTemplate="footer">
-      <div style="display:flex; justify-content: space-between; align-items: center;">
-        <p>{{product['price']}} TL</p>
-        <p-button label="Add Cart" icon="pi pi-cart-plus"></p-button>
+      <div class="products-header">
+        <p>{{product['price'] | number:'1.2-2'}} TL</p>
+        <button class="products-header-btn" (click)="addproduct(product)" *ngIf="product['quantity'] == 0">
+          <i class="pi pi-plus"></i>
+        </button>
+        <div *ngIf="product['quantity'] !== 0" class="products-header-group-btn">
+          <button class="products-header-group-btns-left" (click)="removeProductFromCart(product)"
+            *ngIf="product['quantity'] ==  1">
+            <i style="color:#ff7f00" class="pi pi-trash"></i>
+          </button>
+          <button class="products-header-group-btns-left" (click)="removeProductFromCart(product)"
+            *ngIf="product['quantity'] !== 1">
+            <i style="color:#ff7f00" class="pi pi-minus"></i>
+          </button>
+          <p class="products-header-quantity">{{product['quantity']}}</p>
+          <button class="products-header-group-btns-right" (click)="addproduct(product)">
+            <i style="color:#ff7f00" class="pi pi-plus"></i>
+          </button>
+        </div>
       </div>
     </ng-template>
   </p-card>

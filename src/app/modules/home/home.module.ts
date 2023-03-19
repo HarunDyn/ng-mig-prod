@@ -8,6 +8,7 @@ import { CardModule } from 'primeng/card';
 import { ButtonModule } from 'primeng/button';
 import { MenubarModule } from 'primeng/menubar';
 import { ProgressSpinnerModule } from 'primeng/progressspinner';
+import { CardHoverDirective } from 'src/app/shared/directives/zoom.directive';
 
 @NgModule({
   declarations: [
@@ -18,10 +19,11 @@ import { ProgressSpinnerModule } from 'primeng/progressspinner';
     FormsModule,
     SharedModule,
     BrowserAnimationsModule,
+    MenubarModule,
     CardModule,
     ButtonModule,
-    MenubarModule,
     ProgressSpinnerModule
   ],
+  providers: [CardHoverDirective],
 })
 export class HomeModule { }
