@@ -1,7 +1,8 @@
-export interface Data {
-  id?: string;
+export interface Product {
+  id: string;
   name?: string;
   price?: number;
   category?: string;
   image?: string;
+  quantity?: number;
 }
